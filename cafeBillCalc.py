@@ -4,9 +4,10 @@ coffee = float(input("What is the price of the coffee? "))
 pastry = float(input("What is the price of the pastry? "))
 juice = float(input("What is the price of the juice? "))
 
-def calculate_bill():
-    price_all = coffee + pastry + juice
-    service_multi = price_all * SERVICE_TAX
-    totalbill = price_all + service_multi
+price_all = coffee + pastry + juice
 
-returnbill = DISPLAY("Your total is: $", totalbill)
+service_multi = price_all * SERVICE_TAX
+
+totalbill = price_all + service_multi
+
+print("Your total is: $", totalbill)
